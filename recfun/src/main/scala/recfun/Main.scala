@@ -20,8 +20,16 @@ object Main {
    * Exercise 2
    */
     def balance(chars: List[Char]): Boolean = {
-    def balanceCount(x: Int): Int =
-    if (chars.isEmpty && x == 0) true else false
+
+    def balanceIter(chars: List[Char], x: Int): Boolean = {
+      if (chars.isEmpty && x == 0) true
+      else {
+        if (chars.isEmpty || x<0) false else balanceIter(chars.tail, updateIter(chars.head, x))
+      }
+    }
+    def updateIter(head: Char, x: Int): Int = if (head=='(') x+1 else if (head==')') x-1 else x
+
+    balanceIter(chars,0)
   }
 
   
