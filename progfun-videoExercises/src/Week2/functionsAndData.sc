@@ -4,11 +4,8 @@ object functionsAndData {
   val y = new Rational(5, 7)
   val z = new Rational(3, 2)
   x.add(y)
-  x.neg
-  y.sub(x)
-  x.sub(y)
-  x.sub(y).sub(z)
-
+  //Any method with a parameter can be written using infix notation
+  x add y
 
 
   class Rational(x: Int, y: Int) {
