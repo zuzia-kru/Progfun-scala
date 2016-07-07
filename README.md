@@ -6,3 +6,5 @@ Directories refer to different weeks of the course:
 * Week2 - funsets - implementing *functional sets* (using a characteristic function) and operations on it (such as union, intersection, difference) using *anonymous functions*. Introduction of *traits* in the test suite.
 
 * And additionally the progfun-videoExercises that contains worksheets used during the video lectures to practice new concepts on the go.
+
+I aim to finish this course within it's time.
